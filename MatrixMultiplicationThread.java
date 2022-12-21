@@ -29,6 +29,7 @@ public class MatrixMultiplicationThread extends Thread {
 
         MatrixMultiplicationThread[][] tasks = new MatrixMultiplicationThread[matrixA.length][matrixB[0].length];
         
+        System.out.println("Matrix A:");
         for (int i = 0; i < matrixA.length; i++) {
             for (int j = 0; j < matrixA[i].length; j++) {
                 System.out.print(matrixA[i][j] + " ");
@@ -36,8 +37,7 @@ public class MatrixMultiplicationThread extends Thread {
             System.out.println();
         }
         
-        System.out.println("------------------");
-        
+        System.out.println("Matrix B:");
         for (int i = 0; i < matrixB.length; i++) {
             for (int j = 0; j < matrixB[i].length; j++) {
                 System.out.print(matrixB[i][j] + " ");
